@@ -1,40 +1,55 @@
-# ML_Assignment_XGBOOST
-XGBoost Salary Prediction
+Rainfall Prediction using XGBoost
 
-📌 Project Overview
+This project builds a machine learning model to predict rainfall using weather data and the powerful XGBoost algorithm. It demonstrates the full pipeline: from data preprocessing and visualization to model training and evaluation.
 
-This project demonstrates the use of XGBoost to predict salaries based on factors such as experience, education level, and job title.
-The dataset is processed, trained using XGBoost, and evaluated for accuracy.
+---
 
+##  Project Structure
 
+- `Rainfall_Xgb.ipynb` – Main Jupyter notebook with all code, training, evaluation, and plots.
+- `README.md` – Project overview and setup instructions.
 
-Xgb_Salary_Prediction.py - Main Python script to load data, train the model, and visualize feature importance.
+---
 
-Salary Data.csv - Sample dataset used for training and testing.
+##  Problem Statement
 
- How It Works
+The goal is to predict whether it will rain (`rainfall = 1`) or not (`rainfall = 0`) based on features like temperature, humidity, cloud cover, and wind.
 
-Load Data: Reads Salary Data.csv.
+---
 
-Preprocess Data: Encodes categorical variables (e.g., Education Level, Job Title).
+##  Technologies Used
 
-Train Model: Uses XGBRegressor to learn salary patterns.
+- **Python 3**
+- **XGBoost**
+- **Pandas, NumPy**
+- **Matplotlib, Seaborn**
+- **Scikit-learn**
 
-Evaluate Performance: Calculates RMSE to measure accuracy.
+---
 
-Visualize Feature Importance: Shows which factors impact salary the most.
+## Model Summary
 
- Model Performance
+- Model: `XGBClassifier`
+- Evaluation Metric: Accuracy, Confusion Matrix, and Classification Report
+- Techniques used:
+  - Train-test split
+  - Hyperparameter tuning
+  - Feature importance visualization
 
-The model performance is evaluated using Root Mean Squared Error (RMSE). The lower the RMSE, the better the model's predictions.
+---
 
- Future Improvements
+## Features Used
 
-Optimize hyperparameters for better accuracy.
+- Temperature (min, max, mean)
+- Dew point
+- Humidity
+- Wind direction & speed
+- Cloud cover
+- Sunshine duration
 
-Try different machine learning models (e.g., Random Forest, Neural Networks).
+---
 
-Use a larger dataset for better generalization.
+📈 Results
+✅ Baseline accuracy: ~86.8%
 
-
-
+✅ Accuracy after tuning: ~88–89%
